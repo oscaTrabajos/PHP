@@ -11,13 +11,15 @@ $resultado = mysqli_query($conexion, $select);
 <html>
 <head>
 	<style type="text/css">
-	   div{
-	       margin: 200px;
-	       text-align: center;   
-	   }
+	 	  div {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            text-align: center;
+        }
 	   table,th,td {
 	       border: 2px solid black;
-	       margin-left: 20%;
+	       margin: auto;
 	       padding: 5px;
 	   }
 	</style>
