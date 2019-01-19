@@ -2,7 +2,7 @@
 //Si existe la variable post
 //Venimos desde el formulario
 //Si está definida el nombre:
-if(isset($_POST["nombre"])){
+if(!empty($_POST["nombre"])){
     $nombre=$_POST["nombre"];
     $color=$_POST["color"];
     //Creamos cookie si está definido un nombre
@@ -40,7 +40,7 @@ else {
     <div>
     	<!-- Haremos lo mismo para mostrar el nombre-->
     	<p>Eres <?php echo $nombre?></p>
-    	<a href="otro.php">Salir</a>
+    	<a href="cerrar.php">Salir</a>
     </div>	
 </body>
 </html>
